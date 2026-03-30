@@ -1,0 +1,7 @@
+{
+  "name": "Edge Voice Changer",
+  "description": "A Samsung Edge Panel style real-time voice changer with various voice presets.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

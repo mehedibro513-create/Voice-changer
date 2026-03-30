@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/transparent">
+
+    <View
+        android:id="@+id/panelHandle"
+        android:layout_width="20dp"
+        android:layout_height="80dp"
+        android:background="#88FFFFFF"
+        android:layout_gravity="center_vertical" />
+
+    <LinearLayout
+        android:id="@+id/panelContent"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#CC000000"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edge Voice Changer AI"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <ToggleButton
+            android:id="@+id/btnOnOff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textOn="ON"
+            android:textOff="OFF"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age (5 - 80)"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp" />
+
+        <SeekBar
+            android:id="@+id/ageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="75"
+            android:progress="20" />
+
+        <Switch
+            android:id="@+id/genderToggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender (Male/Female)"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voice Presets"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/presetGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/presetCuteGirl" android:text="Cute Girl" android:textColor="#FFFFFF" />
+            <RadioButton android:id="@+id/presetFemale" android:text="Female Voice" android:textColor="#FFFFFF" />
+            <RadioButton android:id="@+id/presetMale" android:text="Male Voice" android:textColor="#FFFFFF" />
+            <RadioButton android:id="@+id/presetDeepVoice" android:text="Deep Voice" android:textColor="#FFFFFF" />
+            <RadioButton android:id="@+id/presetChild" android:text="Child Voice" android:textColor="#FFFFFF" />
+            <RadioButton android:id="@+id/presetOldMan" android:text="Old Man" android:textColor="#FFFFFF" />
+            <RadioButton android:id="@+id/presetRobot" android:text="Robot Voice" android:textColor="#FFFFFF" />
+            <RadioButton android:id="@+id/presetHinata" android:text="Hinata (Naruto)" android:textColor="#FFFFFF" />
+            <RadioButton android:id="@+id/presetGojo" android:text="Gojo (Lohit Sharma)" android:textColor="#FFFFFF" />
+        </RadioGroup>
+
+    </LinearLayout>
+</LinearLayout>
